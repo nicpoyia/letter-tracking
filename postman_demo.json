@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "ccfce4a2-759a-46c8-bdf7-afbb025077cc",
+		"name": "Demo of Letter Tracking API - Nicolas Poyiadjis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Track specific letter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/letters/by_ship_id/LU680211095FR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"letters",
+						"by_ship_id",
+						"LU680211095FR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Track all letters in DB asynchronously",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/letters/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"letters",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Track letters updated between period",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/letters/by_update/2022-05-01T09:58:10/2022-05-02T11:59:15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"letters",
+						"by_update",
+						"2022-05-01T09:58:10",
+						"2022-05-02T11:59:15"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
